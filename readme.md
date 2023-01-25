@@ -27,8 +27,8 @@ Added a GitHub webhook with the Jenkins url that was triggered when a push or pu
 ​
 ## How have you used Jenkins to add Continuous delivery with this project?
 
- If the test build was successful without any errors through CI, I used a post build action (build other projects) which would trigger and push to the main branch as well as run the shell scripts
-​
+If the test build was successful without any errors through CI, In the post build section i selected the option to "Trigger only if build is stable" which would trigger and push to the main branch
+
 ### How did you allow Jenkins access to the EC2 instance?
 
 On the Jenkins config under the Build Environment settings i ticked the "SSH Agent" option and then added my credentails by adding my Private AWSkey
