@@ -31,12 +31,12 @@ Added a GitHub webhook with the Jenkins url that was triggered when a push or pu
 
 ### How did you allow Jenkins access to the EC2 instance?
 
-•On the Jenkins config under the Build Environment settings i ticked the "SSH Agent" option and then added my credentails by adding my Private AWSkey
+• On the Jenkins config under the Build Environment settings i ticked the "SSH Agent" option and then added my credentails by adding my Private AWSkey
 On EC2 i selected the security settings tab and added "JenkinsDeployment" to the settings
 ​
 ### How did you get the CI project to trigger the CD build?
 
-•Added a post build action called "Build other Projects" on the CI config so it will push to github if successful and merge the results 
+• Added a post build action called "Build other Projects" on the CI config so it will push to github if successful and merge the results 
 ​
 ---
 
