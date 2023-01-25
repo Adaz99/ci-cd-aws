@@ -35,7 +35,6 @@ Added a GitHub webhook with the Jenkins url that was triggered when a push or pu
 On EC2 i selected the security settings tab and added "JenkinsDeployment" to the settings
 ​
 ### How did you get the CI project to trigger the CD build?
-
 Added a post build action called "Build other Projects" on the CI config so it will push to github if successful and merge the results 
 ​
 ---
